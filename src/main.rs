@@ -13,9 +13,6 @@ fn main() {
         process::exit(1);
     });
 
-    // println!("Searching for {}", config.query);
-    // println!("In file {}", config.file_path);
-
     // 业务逻辑
     if let Err(e) = minigrep_tupelo::run(config) {
         println!("Application error: {e}");
